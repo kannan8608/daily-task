@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        div {
+          border: 2px solid rgb(2, 63, 71);
+          margin: 50px;
+        }
+        </style>
+</head>
+<body>
+    <h3 class="box"><a href="submit">NEW_PROJECT</a></h3>
+    <form>
+    {% for x in mymembers %}
+    <div><h1>project_title : {{ x.project_title }}</h1>
+    <h3>employee_name : {{ x.employee_name }}</h3>
+    <h3>project_number : {{ x.project_number }}</h3>
+    <h3>description : {{ x.description }}</h3>
+    <h3>deadline_date : {{ x.deadline_date }}</h3>
+</div>
+    {% endfor %}
+</form>
+</body>
+</html>
